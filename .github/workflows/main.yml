@@ -1,0 +1,11 @@
+name: Generate Boilerplate
+on: [push]
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+        - name : Checkout Repo
+          uses : actions/checkout@v3
+        - name:  Generate Boilerplate
+          uses: alxzndr2019/javascript-backend-boilerplate-generator@main
+          
